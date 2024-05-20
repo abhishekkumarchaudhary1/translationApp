@@ -9,7 +9,7 @@
 - [backend_config](#backend_config)
 - [frontend_config](#frontend_config)
 - [proxy_config](#proxy_config)
-- [github_push_config](#proxy_push_config)
+- [github_push_config](#github_push_config)
 
 
 ## gcp_config
