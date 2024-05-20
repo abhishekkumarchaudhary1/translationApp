@@ -1,0 +1,23 @@
+# Node modules
+frontEnd/node_modules/
+backEnd/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+backEnd/.env
+backEnd/credentials.json
+
+# Build directories
+frontEnd/dist/
+backEnd/build/
+
+# Mac and Windows files
+.DS_Store
+Thumbs.db
+
+# Vite and other build tools
+.vite
