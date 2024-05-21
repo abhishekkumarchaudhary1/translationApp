@@ -42,7 +42,7 @@ npm init
 ```
 * Installing the necessary packages:
 ```
-npm i dotenv express body-parser @google-cloud/translate
+npm i dotenv express @google-cloud/translate
 ```
 * Create an 'index.js' file and set the 'start' dependency as 'node index.js'
 
@@ -57,7 +57,6 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const bodyParser = require('body-parser');
 const { Translate } = require('@google-cloud/translate').v2;
 
 
@@ -77,7 +76,7 @@ const languages = [
 ];
 
 // Middleware to parse JSON request bodies
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.post('/api/translate', async (req, res) => {
   const { text } = req.body;
